@@ -6,6 +6,16 @@
     font-family: 'PT Sans', sans-serif;
     list-style: none;
     text-decoration: none;
+    line-height: 1.5rem;
+}
+
+main img {
+    width: 100%;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
 }
 
     /* Color styles */
@@ -15,6 +25,7 @@
     --purple: #9792E4;
     --lastsection-color: #FDC15F;
     --footer-bg: #333333;
+    --cards-color: #5A6E7F;
 }
 
     /* HEADER */
@@ -23,7 +34,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--nav-bg)
 }
 
@@ -52,6 +63,32 @@
 
 #menu-toggle {
     display: none;
+}
+
+    /* PLANNING */
+.container {
+    margin: 0 1.5rem;
+}
+
+.cards {
+    margin-top: 2.5rem;
+    border-radius: 20px;
+    padding: 2rem 2rem 0;
+    width: 100%;
+    background-color: var(--cards-bg);
+}
+
+#planning h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--nav-bg);
+    padding-bottom: 1.5rem;
+}
+
+#planning p {
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+    color: var(--cards-color);
 }
 
     /* BONUS */
@@ -91,6 +128,7 @@
     transform: rotate(-405deg);
 }
 
+    /* MEDIA QUERY */
 @media screen and (min-width: 320px) and (max-width: 991px) {
     .menu-button-container {
         display: flex;
