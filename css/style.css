@@ -462,7 +462,7 @@ footer p:last-of-type {
     /* MEDIA QUERY */
 
     /* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 991px) {
+@media screen and (min-width: 320px) and (max-width: 1199px) {
     .menu-button-container {
         display: flex;
     }
@@ -601,5 +601,73 @@ footer p:last-of-type {
     #get-started h3 {
         font-size: 2.5rem;
         margin-bottom: 2rem;
+    }
+}
+
+    /* DESKTOP */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .container-small {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .top-nav {
+        padding: 1rem;
+    }
+
+    .menu {
+        align-items: center;
+    }
+
+    .menu a{
+        color: #FFFFFF;
+    }
+
+    .menu a:last-of-type {
+        color: #000000;
+        background-color: #FFFFFF;
+        padding: 0.5rem 1rem;
+        border-radius: 25px;
+    } 
+
+    .flex-inset {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #strategic, .planning-card {
+        width: calc((100% / 2) - 1.5rem);
+    }
+    
+    #strategic h2 {
+        margin-top: 6rem;
+        font-size: 2rem;
+    }
+
+    .planning-card {
+        width: 35%;
+        margin-top: 12rem;
+    }
+
+    .button-cards {
+        text-align: center;
+        width: 30%;
+    }
+
+    #phone {
+        width: 64%;
+        padding-top: 2rem;
+    }
+
+    .features-cards {
+        width: calc((100% / 3) - 1.5rem);
     }
 }
