@@ -38,13 +38,17 @@ main img {
 }
 
     /* HEADER */
+header {
+    background-color: var(--nav-bg)
+}
+
 .top-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 1rem;
-    background-color: var(--nav-bg)
 }
 
 .menu {
@@ -225,18 +229,10 @@ main img {
 }
 
 .quote::before {
-    font-size: 4rem;
-    position: absolute;
-    top: 1rem;
-    left: -0.5rem;
     content: "\201C"
 }
 
 .quote::after {
-    font-size: 4rem;
-    position: absolute;
-    bottom: 0.5rem;
-    right: -0.5rem;
     content: "\201D";
 }
 
@@ -312,7 +308,7 @@ main img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 1rem 0; 
+    margin: 1rem 0;
 }
 
 .image-about img {
@@ -465,7 +461,9 @@ footer p:last-of-type {
 }
 
     /* MEDIA QUERY */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+
+    /* MOBILE */
+@media screen and (min-width: 320px) and (max-width: 991px) {
     .menu-button-container {
         display: flex;
     }
@@ -508,5 +506,102 @@ footer p:last-of-type {
 
     .menu>a:not(:last-child) {
         border-bottom: 1px solid #444;
+    }
+}
+
+    /* TABLET */
+@media screen and (min-width: 768px) {
+    .container, .container-small {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    .container-mini {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .flex-start {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-nav {
+        padding: 1rem;
+    }
+
+    .demo-cards {
+        width: calc((100% / 3) - 1.5rem);
+    }
+
+    .demo-cards:first-of-type {
+        width: calc((100% / 3 * 2) - 0.75rem);
+    }
+
+    .demo-cards:first-of-type div:last-of-type {
+        width: 50%;
+    }
+
+    #planning {
+        padding: 5rem 0 3rem;
+    }
+
+    #planning h2 {
+        font-size: 4rem;
+        margin: 3rem 0 1rem;
+    }
+
+    #testimonials h2 {
+        font-size: 2.7rem;
+    }
+
+    .partners-text {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+    .features-cards {
+        width: 47%;
+    }
+
+    .partners img {
+        width: 100%;
+    }
+
+    .partners-text {
+        padding-left: 1.5rem;
+        width: 65%;
+    }
+
+    .left-about p {
+        line-height: 2rem;
+    }
+
+    .left-about {
+        width: 52%;
+        margin-bottom: 4rem;
+    }
+
+    .right-about {
+        width: 38%;
+    }
+    
+    #get-started h3 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 }
