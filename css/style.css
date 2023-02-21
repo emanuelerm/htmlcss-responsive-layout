@@ -224,12 +224,11 @@ header {
 
 .quote {
     color: #FFFFFF;
-    position: relative;
     padding-bottom: 1.5rem;
 }
 
 .quote::before {
-    content: "\201C"
+    content: "\201C";
 }
 
 .quote::after {
@@ -569,9 +568,8 @@ footer p:last-of-type {
     }
 
     .partners-text {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
+        padding-top: 2.5rem;
+        text-align: start;
     }
 
     .features-cards {
